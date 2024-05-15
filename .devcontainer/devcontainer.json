@@ -15,7 +15,8 @@
         "mikestead.dotenv",
         "christian-kohler.path-intellisense",
         "esbenp.prettier-vscode",
-        "CoenraadS.bracket-pair-colorizer"
+        "CoenraadS.bracket-pair-colorizer",
+        "damms005.devdb-vscode",
     ],
     "remoteUser": "sail",
     "postCreateCommand": "chown -R 1000:1000 /var/www/html && composer install && php artisan key:generate && echo \"ASSET_URL=https://${CODESPACE_NAME}-80.${GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN}\" >> .env",
